@@ -8,15 +8,24 @@ body {
     padding-top: 50px;
 }
 
+h1,
+h2,
+h3 {
+    margin: 0;     /* only for debug */           
+}
+
 /* HEADER (DEBUG) */
 /* navbar */
 #navbar {
     background-color: white;
     border: none;
 }
-#navbar img {
-    margin-right: 100px;
-}
+/* #navbar .nav > li > a {
+    padding: 10px;
+} */
+/* #navbar img {
+    margin-right: 40px;
+} */
 
 .btn_blue {
     color: blue;
@@ -133,11 +142,22 @@ body {
     padding: 30px 0;
 }
 
-/* only for debug */
-.center {
+.center {                       /*only for debug*/
     height: 250px;
-    background-color: white;
+    background-color: white; 
     width: 462.24px;
-    margin: 0 auto;
+    margin: 0 auto;            /* only for debug */
 }
-/*only for debug*/
+
+/* start now */
+#start_now {
+    padding: 30px 0;
+    background-color: darkblue;
+}
+
+/* FOOTER */
+footer {
+    height: 460px;
+    padding: 30px 0;
+    background-color: blue;
+}
