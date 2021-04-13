@@ -1,11 +1,15 @@
-/* debug */
-.wrapper_70 {
-    width: 70%;
+/* COMMON */
+.wrapper_60 {
+    width: 60%;
     margin: 0 auto;
 }
+
 body {
     padding-top: 50px;
 }
+
+/* HEADER (DEBUG) */
+/* navbar */
 #navbar {
     background-color: white;
     border: none;
@@ -13,9 +17,7 @@ body {
 #navbar img {
     margin-right: 100px;
 }
-/* #navbar .navbar-brand {
-    padding: 15px 15px 15px 0;
-} */
+
 .btn_blue {
     color: blue;
     border: 1px solid blue;
@@ -26,25 +28,17 @@ body {
     vertical-align: middle;
 }
 
-
-
-
-.container,
-.row {
-    height: 100%;
-}
+/* jumbotron */
 #jumbotron {
     height: 400px;
     background-image: url(../img/bg-banner-home.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 30px 0;
 }
-
-
-[class*="col-"] {
-    height: 100%;
-    background-color: green;
-    border: 1px solid white;
+.h_150 {
+    height: 170px;
+    background-color: pink;    
 }
 #my_form {
     height: 100%;
@@ -52,18 +46,98 @@ body {
     border-radius: 10px;
 }
 
-#company_item {
-    height: 100%;
-} 
-
+/* companies */
 #companies {
     padding: 40px 0;
     height: 200px;
     background-color: lightgrey;
 }
+.h-30 {
+    height: 40px;
+    background-color: coral;
+    border: 1px solid white;
+}
 
+/* MAIN (DEBUG) */
+/* process */
 #process {
     height: 600px;
-    
+    padding: 30px 0;  
+} 
+.h-270-yellow {
+    height: 270px;
+    background-color: yellow;
+}
+.h-270-green {
+    height: 270px;
+    background-color: green;
+}
+.h-30 {
+    background-color: orange;
+    height: 30px;
+}
+
+/* carousel */
+#carousel {
+    /* height: 600px; */
+    padding: 30px 0;
+    background-color: lightgrey;
+}
+#carousel img {
+    height: 300px;
 } 
 
+/* features */
+#features {
+    height: 300px;
+    padding: 30px 0;
+}
+.h-80 {
+    height: 80px;
+    background-color: teal;
+    border: 1px solid red;
+}
+
+/* speed test */
+#speed_test {
+    height: 300px;
+    background-color: blue;
+    padding: 30px 0;
+}
+.h-120 {
+    height: 120px;
+    background-color: firebrick;
+    /* border: 1px solid white; */
+}
+.h-20-red {
+    background-color: red;
+    height: 20px;
+}
+.h-20-white {
+    background-color: white;
+    height: 20px;
+}
+.h-20-green {
+    background-color: green;
+    height: 20px;
+}
+.line {
+    background-color: fuchsia;
+    height: 20px;
+}
+
+/* dev-teams */
+#dev_teams {
+    height: 400px;
+    background-color: lightgrey;
+    padding: 30px 0;
+}
+
+/* only for debug */
+.center {
+    height: 250px;
+    background-color: white;
+    width: 462.24px;
+    margin: 0 auto;
+}
+/*only for debug*/
