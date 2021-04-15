@@ -280,7 +280,9 @@ figcaption {
 #features h2 {
     margin-bottom: 20px;
 }
-
+#features p {
+    font-size: 1.2em;
+}
 .feature_item {
     margin-top: 20px;
 }
