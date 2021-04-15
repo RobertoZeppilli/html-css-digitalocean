@@ -1,8 +1,4 @@
 /* COMMON */
-.wrapper_80 {
-    width: 80%;
-    margin: 0 auto;
-}
 .wrapper_40 {
     width: 40%;
     margin: 0 auto;
@@ -518,9 +514,6 @@ footer span {
 /* xs */
 @media screen and (max-width: 768px) {
     
-    .wrapper_80 {
-        width: 100%;
-    }
     .wrapper_40 {
         width: 60%;
     }
