@@ -446,15 +446,15 @@ footer span {
 #help {
     position: fixed;
     bottom: 20px;
-    right: 0;
+    right: 20px;
     z-index: 3;
 }
 .help_img {
-    height: 100%;
+    height: 80px;
     position: relative;
 }
 .help_img img {
-    width: 100%;
+    height: 100%;
     border-radius: 10px;
     padding: 10px;
     background-color: #006AFF;
@@ -462,7 +462,7 @@ footer span {
 
 .number_container {
     position: absolute;
-    right: 20px;
+    right: -10px;
     top: -20px;
 }
 .circle_white {
@@ -696,10 +696,22 @@ footer span {
     }
 }
 
-/* media for arrow in sm size */
-@media screen and (max-width: 594px) {
+/* media for arrow & number container in xs size */
+@media screen and (max-width: 550px) {
+
+    #help {
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 3;
+    }
+    .number_container {
+        position: absolute;
+        right: -25px;
+        top: -20px;
+    }
+    
     .text::before {
         bottom: 50px;
-        
     }
-}
+} 
