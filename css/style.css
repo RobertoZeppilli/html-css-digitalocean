@@ -66,7 +66,6 @@ h1 {
     height: 70px;
 }
 #navbar .navbar-nav > li {
-    height: 70px;
     line-height: 70px;
 }
 
@@ -84,6 +83,15 @@ h1 {
 .fa-chevron-down {
     display: inline-block;
     vertical-align: middle;
+}
+
+#navbar .dropdown-menu > li > a {
+    color: black;
+    transition: color .5s ease-in-out;
+}
+#navbar .dropdown-menu > li > a:hover {
+    background-color: transparent;
+    color: #579AFF;
 }
 
 #navbar .navbar-nav > li > a.btn_login {
@@ -434,7 +442,80 @@ footer span {
     text-decoration: none;
 }
 
+/* HELP */
+#help {
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    z-index: 3;
+}
+.help_img {
+    height: 100%;
+    position: relative;
+}
+.help_img img {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #006AFF;
+}
+
+.number_container {
+    position: absolute;
+    right: 20px;
+    top: -20px;
+}
+.circle_white {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+}
+.circle_red {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: red;
+}
+.circle_red,
+.number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.number {
+    color: white;
+    font-weight: bold;
+}
+.text {
+    height: 100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.text p {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.text::before {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 8px 0px 8px 16px;
+    border-color: transparent transparent transparent white;
+}
+
+
 /* MEDIA */
+/* xs */
 @media screen and (max-width: 768px) {
     
     .wrapper_80 {
@@ -487,7 +568,7 @@ footer span {
     }
 }
 
-
+/* sm */
 @media screen and (min-width: 769px) and (max-width: 1199px) {
 
     h1 {
@@ -518,9 +599,14 @@ footer span {
     }
 }
 
-/* @media (max-width: 992px) {
+/* media for toggle collapse on landscape mode tablets */
+@media screen and (max-width: 1025px) and (orientation: landscape) {
+
     .navbar-header {
         float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
     }
     .navbar-toggle {
         display: block;
@@ -529,34 +615,88 @@ footer span {
         border-top: 1px solid transparent;
         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
     }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
     .navbar-collapse.collapse {
         display: none!important;
     }
     .navbar-nav {
         float: none!important;
-        margin: 7.5px -15px;
-    }
-    .navbar-nav>li {
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
         float: none;
     }
     .navbar-nav>li>a {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-} */
+    .collapse.in{
+  		display:block !important;
+	}
+}
 
-    /* media for carousel cursors */
-    @media screen and (min-width: 769px) and (max-width: 999px) {
+/* media for toggle collapse on portrait mode tablets */
+@media screen and (max-width: 992px) {
 
-        #carousel .cursor-left,
-        #carousel .cursor-right {
-            top: 25%;
-        }
+    .navbar-header {
+        float: none;
     }
-    @media screen and (min-width: 1000px) and (max-width: 1065px) {
-
-        #carousel .cursor-left,
-        #carousel .cursor-right {
-            top: 30%;
-        }
+    .navbar-left,.navbar-right {
+        float: none !important;
     }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+}
+
+/* media for carousel cursors */
+@media screen and (min-width: 769px) and (max-width: 999px) {
+
+    #carousel .cursor-left,
+    #carousel .cursor-right {
+        top: 25%;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1065px) {
+
+    #carousel .cursor-left,
+    #carousel .cursor-right {
+        top: 30%;
+    }
+}
+
+/* media for arrow in sm size */
+@media screen and (max-width: 594px) {
+    .text::before {
+        bottom: 50px;
+        
+    }
+}
