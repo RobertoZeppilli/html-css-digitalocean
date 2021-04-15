@@ -4,6 +4,14 @@
     margin: 0 auto;
     position: relative;
 }
+.wrapper_70 {
+    width: 70%;
+    margin: 0 auto;
+}
+.wrapper_80 {
+    width: 80%;
+    margin: 0 auto;
+}
 
 body {
     margin-top: 70px;
@@ -430,7 +438,7 @@ footer span {
 }
 .block_list a {
     color: #7c879f;
-    font-size: 1.3em;
+    font-size: 1.1em;
     transition: color .5s ease-in-out;
 }
 .block_list a:hover {
@@ -579,6 +587,9 @@ footer span {
         margin-bottom: 50px;
         font-size: 1.3em;
     }
+    #features p {
+        font-size: 1.2em;
+    }
     #carousel .cursor-left,
     #carousel .cursor-right {
         top: 30%;
@@ -593,7 +604,7 @@ footer span {
 }
 
 /* media for toggle collapse on landscape mode tablets */
-@media screen and (max-width: 1025px) and (orientation: landscape) {
+@media screen and (max-width: 1199px) and (orientation: landscape) {
 
     .navbar-header {
         float: none;
@@ -603,7 +614,7 @@ footer span {
     }
     .navbar-toggle {
         display: block;
-        margin-right: 0;
+        /* margin-right: 0; */
     }
     .navbar-collapse {
         border-top: 1px solid transparent;
@@ -643,7 +654,7 @@ footer span {
     }
     .navbar-toggle {
         display: block;
-        margin-right: 0;
+        /* margin-right: 0; */
         
     }
     .navbar-collapse {
