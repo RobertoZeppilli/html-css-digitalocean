@@ -28,7 +28,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Logo"></a>
+                        <img src="img/logo.png" alt="Logo" class="navbar-brand">
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -66,7 +66,6 @@
                                 <a href="#">Pricing</a>
                             </li>
                         </ul>
-
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#">Docs</a></li>
                             <li class="dropdown">
@@ -82,7 +81,7 @@
                                 </ul>
                             </li>
                             <li><a href="#">Login</a></li>
-                            <li><a class="btn btn_login" href="#">Sign Up</a></li>
+                            <li><button class="btn btn_login" href="#">Sign Up</button></li>
                         </ul>
 
                     </div>
@@ -97,15 +96,17 @@
                         <div class="col-xs-12 col-sm-7">
                             <h1>The simplest cloud platform for developers & teams</h1>
                             <p>
-                                Deploy, manage and scale cloud applications faster and more efficiently on DigitalOcean. We
-                                make managing infrastructure easy for teams and business, whether you're running one virtual
+                                Deploy, manage and scale cloud applications faster and more efficiently on DigitalOcean.
+                                We
+                                make managing infrastructure easy for teams and business, whether you're running one
+                                virtual
                                 machine or ten thousand.
                             </p>
                         </div>
                         <div class="col-xs-12 col-sm-5">
                             <div id="my_form" class="text-center">
                                 <h2 class="bold_txt">Deploy your app in seconds.</h2>
-                                <p class="blue_txt bold_txt">Get started now.</p>
+                                <p class="bold_txt">Get started now.</p>
                                 <form action="get" class="form-group">
                                     <input class="form-control" type="email" placeholder="Email" required>
                                     <input class="form-control" type="password" placeholder="Password" required>
@@ -130,39 +131,37 @@
 
             <!-- companies -->
             <div id="companies" class="text-center">
-                <h4 class="text-uppercase grey_txt">Innovative business trust digital ocean</h4>
-                <div class="wrapper_70">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-xs-6 col-sm-2 col-lg-2">
-                                <div class="company_item">
-                                    <img src="img/docker.svg" alt="">
-                                </div>
+                <h4 class="text-uppercase grey_txt bold_txt">Innovative business trust digital ocean</h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-2 col-lg-2">
+                            <div class="company_item">
+                                <img src="img/docker.svg" alt="Docker Logo">
                             </div>
-                            <div class="col-xs-6 col-sm-2 col-lg-2">
-                                <div class="company_item">
-                                    <img src="img/gitlab.svg" alt="">
-                                </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-2 col-lg-2">
+                            <div class="company_item">
+                                <img src="img/gitlab.svg" alt="Gitlab Logo">
                             </div>
-                            <div class="col-xs-6 col-sm-2 col-lg-2">
-                                <div class="company_item">
-                                    <img src="img/slack.svg" alt="">
-                                </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-2 col-lg-2">
+                            <div class="company_item">
+                                <img src="img/slack.svg" alt="Slack Logo">
                             </div>
-                            <div class="col-xs-6 col-sm-2 col-lg-2">
-                                <div class="company_item">
-                                    <img src="img/hashicorp.svg" alt="">
-                                </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-2 col-lg-2">
+                            <div class="company_item">
+                                <img src="img/hashicorp.svg" alt="Hashicorp Logo">
                             </div>
-                            <div class="col-xs-6 col-sm-2 col-lg-2">
-                                <div class="company_item">
-                                    <img src="img/hashicorp.svg" alt="">
-                                </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-2 col-lg-2">
+                            <div class="company_item">
+                                <img src="img/hashicorp.svg" alt="Hashicorp Logo">
                             </div>
-                            <div class="col-xs-6 col-sm-2 col-lg-2">
-                                <div class="company_item">
-                                    <img src="img/splunk.svg" alt="">
-                                </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-2 col-lg-2">
+                            <div class="company_item">
+                                <img src="img/splunk.svg" alt="Splunk Logo">
                             </div>
                         </div>
                     </div>
@@ -179,13 +178,13 @@
             <section id="process" class="text-center">
                 <div class="container">
                     <h2 class="bold_txt">Deploy and scale seamlessly</h2>
-                    <p class="lead grey_txt">
+                    <h3 class="grey_txt">
                         Our optimized configuration process saves your team time when running and scaling distributed
                         applications, AI & machine learning workloads,hosted services, client websites, or CI/CD
                         environments.
-                    </p>
+                    </h3>
                 </div>
-                <div class="wrapper_60">
+                <div class="wrapper_80">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-xs-12 col-sm-3 col-lg-4">
@@ -200,48 +199,44 @@
                                 </aside>
                             </div>
                             <div class="col-xs-12 col-sm-9 col-lg-8">
-                                <div class="container-fluid">
-                                    <div class="row text-left">
-                                        <div class="col-xs-12 col-sm-6 col-lg-6">
-                                            <div class="process_items text-left">
-                                                <img src="img/cluster-deploy.svg" alt="">
-                                                <h4 class="bold_txt">Cluster deployments</h4>
-                                                <p class="grey_txt">
-                                                    Provision multiple Droplets (virtual machines) in
-                                                    seconds with our control panel, CLI or directly against our API.
-                                                </p>
-                                            </div>
-
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-lg-6">
+                                        <div class="process_items text-left height">
+                                            <img src="img/cluster-deploy.svg" alt="Cluster Deploy">
+                                            <h4 class="bold_txt">Cluster deployments</h4>
+                                            <p class="grey_txt">
+                                                Provision multiple Droplets (virtual machines) in
+                                                seconds with our control panel, CLI or directly against our API.
+                                            </p>
                                         </div>
-                                        <div class="col-xs-12 col-sm-6 col-lg-6">
-                                            <div class="process_items text-left">
-                                                <img src="img/optimized-compute.svg" alt="">
-                                                <h4 class="bold_txt">Optimized compute types</h4>
-                                                <p class="grey_txt">
-                                                    Get the resources you need with Standard or Optimized Droplets.
-                                                </p>
-                                            </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-lg-6">
+                                        <div class="process_items text-left">
+                                            <img src="img/optimized-compute.svg" alt="Optimized Compute">
+                                            <h4 class="bold_txt">Optimized compute types</h4>
+                                            <p class="grey_txt">
+                                                Get the resources you need with Standard or Optimized Droplets.
+                                            </p>
                                         </div>
-                                        <div class="col-xs-12 col-sm-6 col-lg-6">
-                                            <div class="process_items text-left">
-                                                <img src="img/one-click.svg" alt="">
-                                                <h4 class="bold_txt">Global availability</h4>
-                                                <p class="grey_txt">
-                                                    Deploy to any of our data center regions around the world.
-                                            </div>
-
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-lg-6">
+                                        <div class="process_items text-left height">
+                                            <img src="img/one-click.svg" alt="One Click">
+                                            <h4 class="bold_txt">One click apps</h4>
+                                            <p class="grey_txt">
+                                                Skip the install and configuration process with pre-built open source
+                                                images
+                                                supporting Rails, Cassandra, Docker and more.
+                                            </p>
                                         </div>
-                                        <div class="col-xs-12 col-sm-6 col-lg-6">
-                                            <div class="process_items text-left">
-                                                <img src="img/global.svg" alt="">
-                                                <h4 class="bold_txt">One-click apps</h4>
-                                                <p class="grey_txt">
-                                                    Skip the install and configuration process with pre-built open source
-                                                    images
-                                                    supporting Rails, Cassandra, Docker and more.
-                                                </p>
-                                            </div>
-
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-lg-6">
+                                        <div class="process_items text-left">
+                                            <img src="img/global.svg" alt="Global">
+                                            <h4 class="bold_txt">Global availability</h4>
+                                            <p class="grey_txt">
+                                                Deploy to any of our data center regions around the world.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -255,22 +250,22 @@
             <!-- carousel -->
             <section id="carousel" class="text-center">
                 <h2 class="bold_txt">Designed for developers</h2>
-                <p class="lead grey_txt">
+                <h3 class="grey_txt">
                     Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.
-                </p>
+                </h3>
                 <div class="wrapper_40">
                     <i class="fas fa-chevron-left cursor-left fa-2x"></i>
                     <figure>
-                        <img src="img/slide.jpg" alt="">
+                        <img src="img/slide.jpg" alt="Slide">
                     </figure>
-
-                    <figcaption class="bold_txt">Create compute servers in 55 seconds or less.</figcaption>
+                    <figcaption class="bold_txt">
+                        Create compute servers in 55 seconds or less.
+                    </figcaption>
                     <i class="fas fa-chevron-right cursor-right fa-2x"></i>
                     <i class="fas fa-circle"></i>
                     <i class="far fa-circle"></i>
                     <i class="far fa-circle"></i>
                     <i class="far fa-circle"></i>
-
                 </div>
             </section>
             <!-- /carousel -->
@@ -282,9 +277,9 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-4 col-lg-4">
                             <div class="feature_item text-left">
-                                <img src="img/pred-pricing.svg" alt="">
+                                <img src="img/pred-pricing.svg" alt="Predictable Pricing">
                                 <h4 class="bold_txt">Predictable pricing</h4>
-                                <p class="grey_txt">
+                                <p class="lead grey_txt">
                                     Leave complex pricing structure behind. Always know what you'll pay per month with a
                                     flat, industry-leading pricing sructure.
                                 </p>
@@ -293,9 +288,9 @@
                         </div>
                         <div class="col-xs-12 col-sm-4 col-lg-4">
                             <div class="feature_item text-left">
-                                <img src="img/world-class.svg" alt="">
+                                <img src="img/world-class.svg" alt="World Class service">
                                 <h4 class="bold_txt">World class service</h4>
-                                <p class="grey_txt">
+                                <p class="lead grey_txt">
                                     Free round-the-clock technical support for all customers. You'll feel
                                     the love.
                                 </p>
@@ -304,9 +299,9 @@
                         </div>
                         <div class="col-xs-12 col-sm-4 col-lg-4">
                             <div class="feature_item text-left">
-                                <img src="img/reliable-platform.svg" alt="">
+                                <img src="img/reliable-platform.svg" alt="Reliable Platform">
                                 <h4 class="bold_txt">Reliable platform</h4>
-                                <p class="grey_txt">
+                                <p class="lead grey_txt">
                                     More than 100,000 developer teams worldwide trust DigitalOcean to support their business
                                     with a 99,99% uptime SLA for all services.
                                 </p>
@@ -329,10 +324,9 @@
                                     <div class="row">
                                         <div class="col-xs-2 col-sm-2 col-lg-2">
                                             <span class="text-uppercase white_txt">ams2</span>
-
                                         </div>
                                         <div class="col-xs-6 col-sm-6 col-lg-6">
-                                            <span class="grey_txt">Amsterdam, Netherlands</span>
+                                            <span class="azure_txt">Amsterdam, Netherlands</span>
                                         </div>
                                         <div class="col-xs-4 col-sm-4 col-lg-4 text-right">
                                             <a href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
@@ -347,7 +341,7 @@
                                             <span class="text-uppercase white_txt">ams3</span>
                                         </div>
                                         <div class="col-xs-6 col-sm-6 col-lg-6">
-                                            <span class="grey_txt">Amsterdam, Netherlands</span>
+                                            <span class="azure_txt">Amsterdam, Netherlands</span>
                                         </div>
                                         <div class="col-xs-4 col-sm-4 col-lg-4 text-right">
                                             <a href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
@@ -362,7 +356,7 @@
                                             <span class="text-uppercase white_txt">blr1</span>
                                         </div>
                                         <div class="col-xs-6 col-sm-6 col-lg-6">
-                                            <span class="grey_txt">Bangalore, India</span>
+                                            <span class="azure_txt">Bangalore, India</span>
                                         </div>
                                         <div class="col-xs-4 col-sm-4 col-lg-4 text-right">
                                             <a href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
@@ -377,7 +371,7 @@
                                             <span class="text-uppercase white_txt">fra1</span>
                                         </div>
                                         <div class="col-xs-6 col-sm-6 col-lg-6">
-                                            <span class="grey_txt">Frankfurt, German</span>
+                                            <span class="azure_txt">Frankfurt, German</span>
                                         </div>
                                         <div class="col-xs-4 col-sm-4 col-lg-4 text-right">
                                             <a href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
@@ -392,7 +386,7 @@
                                             <span class="text-uppercase white_txt">lon1</span>
                                         </div>
                                         <div class="col-xs-6 col-sm-6 col-lg-6">
-                                            <span class="grey_txt">London, UK</span>
+                                            <span class="azure_txt">London, UK</span>
                                         </div>
                                         <div class="col-xs-4 col-sm-4 col-lg-4 text-right">
                                             <a href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
@@ -407,7 +401,7 @@
                                             <span class="text-uppercase white_txt">nyc1</span>
                                         </div>
                                         <div class="col-xs-6 col-sm-6 col-lg-6">
-                                            <span class="grey_txt">New York, USA</span>
+                                            <span class="azure_txt">New York, USA</span>
                                         </div>
                                         <div class="col-xs-4 col-sm-4 col-lg-4 text-right">
                                             <a href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
@@ -424,7 +418,7 @@
                                             <span class="text-uppercase white_txt">ams2</span>
                                         </div>
                                         <div class="col-xs-6 col-sm-6 col-lg-6">
-                                            <span class="grey_txt">Amsterdam, Netherlands</span>
+                                            <span class="azure_txt">Amsterdam, Netherlands</span>
                                         </div>
                                         <div class="col-xs-4 col-sm-4 col-lg-4 text-right">
                                             <a href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
@@ -439,7 +433,7 @@
                                             <span class="text-uppercase white_txt">ams3</span>
                                         </div>
                                         <div class="col-xs-6 col-sm-6 col-lg-6">
-                                            <span class="grey_txt">Amsterdam, Netherlands</span>
+                                            <span class="azure_txt">Amsterdam, Netherlands</span>
                                         </div>
                                         <div class="col-xs-4 col-sm-4 col-lg-4 text-right">
                                             <a href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
@@ -454,7 +448,7 @@
                                             <span class="text-uppercase white_txt">blr1</span>
                                         </div>
                                         <div class="col-xs-6 col-sm-6 col-lg-6">
-                                            <span class="grey_txt">Bangalore, India</span>
+                                            <span class="azure_txt">Bangalore, India</span>
                                         </div>
                                         <div class="col-xs-4 col-sm-4 col-lg-4 text-right">
                                             <a href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
@@ -469,7 +463,7 @@
                                             <span class="text-uppercase white_txt">fra1</span>
                                         </div>
                                         <div class="col-xs-6 col-sm-6 col-lg-6">
-                                            <span class="grey_txt">Frankfurt, German</span>
+                                            <span class="azure_txt">Frankfurt, German</span>
                                         </div>
                                         <div class="col-xs-4 col-sm-4 col-lg-4 text-right">
                                             <a href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
@@ -484,7 +478,7 @@
                                             <span class="text-uppercase white_txt">lon1</span>
                                         </div>
                                         <div class="col-xs-6 col-sm-6 col-lg-6">
-                                            <span class="grey_txt">London, UK</span>
+                                            <span class="azure_txt">London, UK</span>
                                         </div>
                                         <div class="col-xs-4 col-sm-4 col-lg-4 text-right">
                                             <a href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
@@ -499,7 +493,7 @@
                                             <span class="text-uppercase white_txt">nyc1</span>
                                         </div>
                                         <div class="col-xs-6 col-sm-6 col-lg-6">
-                                            <span class="grey_txt">New York, USA</span>
+                                            <span class="azure_txt">New York, USA</span>
                                         </div>
                                         <div class="col-xs-4 col-sm-4 col-lg-4 text-right">
                                             <a href="#">Test Speed <i class="fas fa-chevron-right"></i></a>
@@ -519,7 +513,7 @@
                 <div class="wrapper_40">
                     <i class="fas fa-chevron-left cursor-left fa-2x"></i>
                     <div class="rockerbox">
-                        <img src="img/rockerbox.png" alt="">
+                        <img src="img/rockerbox.png" alt="Rockerbox Logo">
                         <p class="lead grey_txt">
                             "We have been able to make scaling the technical infrastructure of our business cost effective
                             and
@@ -539,7 +533,7 @@
 
             <!-- start now -->
             <section id="start_now" class="text-center">
-                <h3 class="white_txt">Get started now.</h3>
+                <h3 class="white_txt bold_txt">Get started now.</h3>
                 <a class="btn btn_light" href="#">Create Your Account</a>
             </section>
             <!-- start now -->
@@ -550,19 +544,80 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-lg-4 h-80-footer"></div>
-                    <div class="col-xs-12 col-sm-6 col-lg-2 h-80-footer"></div>
-                    <div class="col-xs-12 col-sm-6 col-lg-2 h-80-footer"></div>
-                    <div class="col-xs-12 col-sm-6 col-lg-2 h-80-footer"></div>
-                    <div class="col-xs-12 col-sm-6 col-lg-2 h-80-footer"></div>
+                    <div class="col-xs-12 col-lg-4">
+                        <img src="img/logo-small.svg" alt="Small DigitalOcean Logo">
+                        <h5>&copy; DigitalOcean, LLC. All Rights Reserved.</h5>
+                        <span>Proudly made in NY</span>
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube fa-2x"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-2">
+                        <h5 class="white_txt">Company</h5>
+                        <ul class="block_list">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Leadership</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Partner Network</a></li>
+                            <li><a href="#">Referral Program</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Legal & Security</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-2">
+                        <h5 class="white_txt">Products</h5>
+                        <ul class="block_list">
+                            <li><a href="#">Droplets</a></li>
+                            <li><a href="#">Spaces</a></li>
+                            <li><a href="#">Kubernetes</a></li>
+                            <li><a href="#">Load Balancers</a></li>
+                            <li><a href="#">Block Storage</a></li>
+                            <li><a href="#">Tools & Integrations</a></li>
+                            <li><a href="#">One-Click Apps</a></li>
+                            <li><a href="#">API</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Release Notes</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-2">
+                        <h5 class="white_txt">Community</h5>
+                        <ul class="block_list">
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">Meetups</a></li>
+                            <li><a href="#">Q&A</a></li>
+                            <li><a href="#">Write for Donations</a></li>
+                            <li><a href="#">Droplets for Demos</a></li>
+                            <li><a href="#">Hatch</a></li>
+                            <li><a href="#">Shop Swag</a></li>
+                            <li><a href="#">Research Program</a></li>
+                            <li><a href="#">Current Research</a></li>
+                            <li><a href="#">Open Source</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-2">
+                        <h5 class="white_txt">Support</h5>
+                        <ul class="block_list">
+                            <li><a href="#">Contact Support</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Network Status</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>
         <!-- /footer -->
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
+
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
