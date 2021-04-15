@@ -611,7 +611,6 @@ footer span {
     .navbar-toggle {
         display: block;
         margin-right: 0;
-        padding-right: 0;
     }
     .navbar-collapse {
         border-top: 1px solid transparent;
@@ -652,7 +651,7 @@ footer span {
     .navbar-toggle {
         display: block;
         margin-right: 0;
-        padding-right: 0;
+        
     }
     .navbar-collapse {
         border-top: 1px solid transparent;
